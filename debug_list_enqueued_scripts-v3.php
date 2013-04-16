@@ -28,7 +28,7 @@ class acf_field_debug_list_enqueued_scripts extends acf_Field
 					<?php
 						$i = 1;
 						foreach ($wp_scripts->print_scripts() as $loaded_scripts) {
-							echo '<tr><td>',$i,'<td>', $loaded_scripts, '</td><td>',(count($wp_scripts->registered[$loaded_scripts]->deps) > 0) ?  implode(" and ", $wp_scripts->registered[$loaded_scripts]->deps) : '', '</td></tr>', "n";
+							echo '<tr><td>',$i,'<td>', $loaded_scripts, '</td><td>',(count($wp_scripts->registered[$loaded_scripts]->deps) > 0) ?  implode(" and ", $wp_scripts->registered[$loaded_scripts]->deps) : '', '</td></tr>', "\n";
 							$i++;
 						}
 					?>

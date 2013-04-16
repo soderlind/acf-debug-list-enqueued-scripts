@@ -43,5 +43,7 @@ function my_register_fields()
 
 == Changelog ==
 
-= 0.0.1 =
+= 1.0.1 =
+* Minor fix
+= 1.0.0 =
 * Initial Release.
